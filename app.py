@@ -29,6 +29,10 @@ from flask_bootstrap import Bootstrap5
 from flask_wtf import FlaskForm, CSRFProtect
 from flask_wtf.file import FileField, FileRequired, FileAllowed
 from wtforms.fields import SubmitField, TextAreaField
+from langchain.document_loaders import PyPDFLoader
+import wtforms
+import flask_wtf	
+import markdown
 
 logging.basicConfig(level=logging.DEBUG)
 
